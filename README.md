@@ -1,3 +1,6 @@
+Jaden: fish.html
+Jack: favorite.html
+
 # Idaho Fly Fishing
 
 A simple guide to fly fishing in eastern Idaho, featuring information about local fish species and favorite fishing spots near Rexburg.
