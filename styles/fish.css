@@ -1,0 +1,185 @@
+/* Fish Page Specific Styles */
+
+.fish-container {
+    max-width: 1400px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.fish-container h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fish Grid */
+.fish-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.fish-card {
+    background: var(--accent2);
+    border: 3px solid var(--secondary);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeInUp 600ms ease forwards;
+}
+
+.fish-card:nth-child(1) { animation-delay: 100ms; }
+.fish-card:nth-child(2) { animation-delay: 200ms; }
+.fish-card:nth-child(3) { animation-delay: 300ms; }
+.fish-card:nth-child(4) { animation-delay: 400ms; }
+.fish-card:nth-child(5) { animation-delay: 500ms; }
+.fish-card:nth-child(6) { animation-delay: 600ms; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fish-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.fish-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.fish-card h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin: 1.5rem 1.5rem 0;
+    padding: 0;
+}
+
+.scientific-name {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0.25rem 1.5rem;
+    padding: 0;
+}
+
+.fish-card p {
+    color: var(--secondary);
+    line-height: 1.6;
+    margin: 1rem 1.5rem;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.fish-details {
+    padding: 1rem 1.5rem 1.5rem;
+    background: var(--primary);
+    display: flex;
+    gap: 0.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* Fish Tips Section */
+.fish-tips {
+    background: var(--accent1);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+.fish-tips h2 {
+    text-align: center;
+    color: var(--accent2);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background: var(--accent2);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 200ms ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-4px);
+}
+
+.tip-card h3 {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.tip-card p {
+    color: var(--secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fish-container {
+        padding: 0 1rem;
+    }
+
+    .fish-container h1 {
+        font-size: 2rem;
+    }
+
+    .fish-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .fish-tips {
+        padding: 2rem 1rem;
+    }
+
+    .fish-tips h2 {
+        font-size: 1.8rem;
+    }
+}
