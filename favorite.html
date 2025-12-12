@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorite Spots - Idaho Fly Fishing</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #d9d9d9;
+    }
+
+    /* HEADER */
+    header {
+        background-color: #1769a3;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+    header img {
+        height: 60px;
+    }
+
+    #site-title {
+        font-size: 2rem;
+        font-family: "Brush Script MT", cursive;
+    }
+
+    nav a {
+        text-decoration: none;
+        background: white;
+        padding: 10px 20px;
+        margin-left: 10px;
+        border-radius: 6px;
+        font-weight: bold;
+        color: #1769a3;
+        border: 2px solid white;
+    }
+
+    nav a:hover {
+        background: #e9eef5;
+    }
+
+    /* MAIN CONTENT BOX */
+    .content-container {
+        background: white;
+        width: 90%;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 15px;
+        border: 8px solid #1769a3;
+    }
+
+    h2 {
+        font-family: "Brush Script MT", cursive;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #1769a3;
+    }
+
+    .section-divider {
+        height: 3px;
+        background: #ccc;
+        margin: 20px 0;
+    }
+
+    /* 3 image card grid */
+    .favorite-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .favorite-card {
+        background: #f7f7f7;
+        padding: 15px;
+        border-radius: 8px;
+        border: 2px solid #c9c9c9;
+        text-align: center;
+    }
+
+    .favorite-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .favorite-card p {
+        height: 10px;
+        background: #ddd;
+        border-radius: 4px;
+        margin: 8px auto;
+        width: 80%;
+    }
+
+    /* Large drone image */
+    .drone-img {
+        width: 100%;
+        height: 350px;
+        background: #ccc;
+        border: 3px solid #999;
+        border-radius: 10px;
+        margin-top: 50px;
+        object-fit: cover;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #1769a3;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        font-size: 1.1rem;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <div id="site-title">Idaho Fly Fishing</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fish.html">Fish</a>
+            <a href="favorite.html">Favorite Spots</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="content-container">
+        <h2>My Favorite Places</h2>
+
+        <div class="section-divider"></div>
+
+        <!-- 3 cards -->
+        <div class="favorite-grid">
+            <div class="favorite-card">
+                <img src="warmriverpersonal.png" alt="Henrys Lake">
+                <h3>Henrys Lake</h3>
+                <p></p><p></p><p></p>
+            </div>
+
+            <div class="favorite-card">
+                <img src="snakeriverpersonal.png" alt="Snake River">
+                <h3>Snake River</h3>
+                <p></p><p></p><p></p>
+            </div>
+
+            <div class="favorite-card">
+                <img src="henrysforkpersonal.png" alt="Henrys Fork">
+                <h3>Henrys Fork</h3>
+                <p></p><p></p><p></p>
+            </div>
+        </div>
+
+        <!-- Big drone img -->
+        <img src="drone.jpg" class="drone-img" alt="Drone Image">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Idaho Fly Fishing - Ethan Anderson
+    </footer>
+
+</body>
+</html>
